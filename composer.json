@@ -1,0 +1,19 @@
+{
+    "description": "Add description here",
+    "type": "neos-package",
+    "require": {
+        "typo3/flow": "*",
+        "typo3/neos": "*"
+    },
+    "name": "bytorsten/editors",
+    "autoload": {
+        "psr-0": {
+            "ByTorsten\\Editors": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "ByTorsten.Editors"
+        }
+    }
+}

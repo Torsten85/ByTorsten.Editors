@@ -1,0 +1,14 @@
+prototype(TYPO3.Neos:Page).head.editorBackendHeader = TYPO3.TypoScript:Template {
+    @position = 'end 11000'
+    templatePath = 'resource://ByTorsten.Editors/Private/Templates/TypoScriptObjects/EditorBackendHeaderData.html'
+    node = ${documentNode}
+
+    @cache {
+        mode = 'uncached'
+        context {
+            1 = 'documentNode'
+        }
+    }
+
+  @if.onlyRenderWhenNotInLiveWorkspace = ${documentNode.context.inBackend}
+}
