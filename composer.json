@@ -1,9 +1,8 @@
 {
-    "description": "Add description here",
-    "type": "neos-package",
+    "description": "Tag editor for Neos",
+    "type": "typo3-flow-plugin",
     "require": {
-        "typo3/flow": "*",
-        "typo3/neos": "*"
+        "typo3/neos": "~2.0"
     },
     "name": "bytorsten/editors",
     "autoload": {
