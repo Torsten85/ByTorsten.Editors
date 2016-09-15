@@ -4,6 +4,5 @@ TYPO3:
       autoInclude:
         'ByTorsten.Editors': TRUE
     userInterface:
-      loadMinifiedJavascript: FALSE
       requireJsPathMapping:
         'ByTorsten.Editors': 'resource://ByTorsten.Editors/Public/Scripts/Inspector/Editors'
