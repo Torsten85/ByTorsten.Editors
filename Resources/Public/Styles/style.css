@@ -1,0 +1,13 @@
+.neos #neos-inspector .neos-select2-container-multi .neos-select2-choices .neos-select2-search-field::after {
+    display: none;
+}
+
+.neos #neos-inspector .neos-select2-container-multi .neos-select2-choices .neos-select2-search-field i {
+    bottom: 11px;
+    right: 10px;
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
