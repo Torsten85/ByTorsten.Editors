@@ -3,9 +3,10 @@ define([
   'Library/jquery-with-dependencies',
   'emberjs',
   'Shared/Utility',
-  'Library/sortable/Sortable'
+  'Library/sortable/Sortable',
+  'Library/underscore'
 
-], function($, Ember, Utility, Sortable) {
+], function($, Ember, Utility, Sortable, _) {
 
   return Ember.TextField.extend({
 
@@ -75,6 +76,18 @@ define([
           $(this).parent().css('padding-bottom', 0);
           $('#neos-application').off('click.select2-custom');
         });
+
+      var icon = this.get('icon');
+
+      var searchFieldContainer = $element.prev().find('.neos-select2-search-field');
+
+      searchFieldContainer.find('input').attr('placeholder', this.get('placeholder'));
+
+      if (icon) {
+        $('<i/>')
+          .addClass(icon)
+          .appendTo(searchFieldContainer);
+      }
 
       this._makeSortable();
     },
